@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+  wordpress:
+    image: wordpress
+    restart: always
+    depends_on:
+      - database
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: database
+      WORDPRESS_DB_USER: giftcard_admin
+      WORDPRESS_DB_PASSWORD: 9sYDWh0RHlFAmoS96bwl
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./wordpress:/var/www/html
+
+  database:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: giftcard_admin
+      MYSQL_PASSWORD: 9sYDWh0RHlFAmoS96bwl
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - ./database:/var/lib/mysql
+
+volumes:
+  wordpress:
+  database:
