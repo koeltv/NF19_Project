@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Elementor Website Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-12-07 15:17:03+0000\n"
+"PO-Revision-Date: 2022-12-14 21:39:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,6 +21,55 @@ msgstr "Nous vous recommandons d’utiliser la version %s ou supérieure de PHP.
 msgctxt "Typography Control"
 msgid "Default"
 msgstr "Par défaut"
+
+#: includes/elements/container.php:508
+msgid "(link)"
+msgstr "(lien)"
+
+#: includes/controls/groups/typography.php:144
+msgctxt "Typography Control"
+msgid "(Black)"
+msgstr "(Noir)"
+
+#: includes/controls/groups/typography.php:143
+msgctxt "Typography Control"
+msgid "(Extra Bold)"
+msgstr "(Très gras)"
+
+#: includes/controls/groups/typography.php:142
+msgctxt "Typography Control"
+msgid "(Bold)"
+msgstr "(Gras)"
+
+#: includes/controls/groups/typography.php:141
+msgctxt "Typography Control"
+msgid "(Semi Bold)"
+msgstr "(Demi gras)"
+
+#: includes/controls/groups/typography.php:140
+msgctxt "Typography Control"
+msgid "(Medium)"
+msgstr "(Moyen)"
+
+#: includes/controls/groups/typography.php:139
+msgctxt "Typography Control"
+msgid "(Normal)"
+msgstr "(Normal)"
+
+#: includes/controls/groups/typography.php:138
+msgctxt "Typography Control"
+msgid "(Light)"
+msgstr "(Fin)"
+
+#: includes/controls/groups/typography.php:137
+msgctxt "Typography Control"
+msgid "(Extra Light)"
+msgstr "(Extra fin)"
+
+#: includes/controls/groups/typography.php:136
+msgctxt "Typography Control"
+msgid "(Thin)"
+msgstr "(Mince)"
 
 #: includes/widgets/image-carousel.php:235
 msgid "Next Arrow Icon"
@@ -119,6 +168,10 @@ msgstr "Il y a eu un problème lors du réglage du nom de votre site"
 msgid "Try it out"
 msgstr "Faites un essai !"
 
+#: core/admin/admin-notices.php:530
+msgid "With our experimental speed boosting features you can go faster than ever before. Look for the Performance label on our Experiments page and activate those experiments to improve your site loading speed."
+msgstr "Grâce à nos fonctionnalités expérimentales d’accélération de la vitesse, vous pouvez aller plus vite que jamais. Recherchez le libellé Performance sur notre page d’expérimentation et activez ces expériences pour améliorer la vitesse de chargement de votre site."
+
 #: core/admin/admin-notices.php:529
 msgid "Improve your site’s performance score."
 msgstr "Améliorez le score de performance de votre site."
@@ -177,7 +230,7 @@ msgstr "Pagination"
 
 #: includes/elements/container.php:67 includes/elements/container.php:305
 #: modules/library/documents/container.php:52 assets/js/editor.js:9679
-#: assets/js/editor.js:36800
+#: assets/js/editor.js:36801
 msgid "Container"
 msgstr "Conteneur"
 
@@ -193,7 +246,7 @@ msgstr "Exclusion"
 msgid "Difference"
 msgstr "Différence"
 
-#: includes/editor-templates/global.php:23 assets/js/editor.js:31145
+#: includes/editor-templates/global.php:23 assets/js/editor.js:31146
 msgid "Add New Container"
 msgstr "Ajouter un nouveau conteneur"
 
@@ -725,7 +778,7 @@ msgid "It seems like your site doesn't have any active Kit. The active Kit inclu
 msgstr "Il semble que votre site n’a pas de kit actif. Un kit actif comprend tous les réglages de votre site. En recréant votre kit, vous pourrez commencer à modifier à nouveau les réglages de votre site."
 
 #: includes/settings/tools.php:380 includes/settings/tools.php:383
-#: assets/js/editor.js:27006
+#: assets/js/editor.js:27007
 msgid "Recreate Kit"
 msgstr "Recréer le kit"
 
@@ -1414,7 +1467,7 @@ msgstr "Ajoute un nouveau type de contenu Elementor qui autorise la création in
 #: modules/landing-pages/module.php:47 modules/landing-pages/module.php:138
 #: modules/landing-pages/module.php:269 modules/landing-pages/module.php:281
 #: app/modules/import-export/assets/js/shared/kit-content-data/kit-content-data.js:32
-#: assets/js/app.js:10883 assets/js/editor.js:48591
+#: assets/js/app.js:10883 assets/js/editor.js:48592
 msgid "Landing Pages"
 msgstr "Page d’atterrissage"
 
@@ -1493,7 +1546,7 @@ msgstr "Migrer vers la v3.0"
 #: core/kits/documents/tabs/global-colors.php:24
 #: core/kits/documents/tabs/global-colors.php:43
 #: app/modules/import-export/assets/js/shared/kit-content-data/kit-content-data.js:48
-#: assets/js/app.js:10891 assets/js/editor.js:44298
+#: assets/js/app.js:10891 assets/js/editor.js:44299
 msgid "Global Colors"
 msgstr "Couleurs globales"
 
@@ -1559,15 +1612,15 @@ msgstr "La dernière mise à jour comprend des modifications substantielles dans
 msgid "Heads up, Please backup before upgrade!"
 msgstr "Attention, veuillez sauvegarder avant de mettre à niveau !"
 
-#: core/settings/editor-preferences/model.php:38 assets/js/editor.js:35270
+#: core/settings/editor-preferences/model.php:38 assets/js/editor.js:35271
 msgid "User Preferences"
 msgstr "Préférences de compte"
 
 #: core/kits/manager.php:429
 #: app/modules/import-export/assets/js/shared/kit-content-data/kit-content-data.js:45
 #: app/modules/import-export/assets/js/shared/kit-data/kit-data.js:28
-#: assets/js/app.js:10889 assets/js/app.js:11370 assets/js/editor.js:44247
-#: assets/js/editor.js:44251 assets/js/editor.js:44261
+#: assets/js/app.js:10889 assets/js/app.js:11370 assets/js/editor.js:44248
+#: assets/js/editor.js:44252 assets/js/editor.js:44262
 msgid "Site Settings"
 msgstr "Réglages du site"
 
@@ -1665,7 +1718,7 @@ msgstr "Faites connaissance avec Elementor en regardant notre série de vidéos 
 
 #: includes/settings/settings.php:326 assets/js/admin.js:282
 #: assets/js/admin.js:289 assets/js/common.js:1885 assets/js/common.js:1892
-#: assets/js/editor.js:37633 assets/js/editor.js:37640
+#: assets/js/editor.js:37634 assets/js/editor.js:37641
 msgid "Enable Unfiltered File Uploads"
 msgstr "Permettre les téléversements de fichier non filtré"
 
@@ -1774,7 +1827,7 @@ msgstr "Le widget %s"
 
 #: core/experiments/manager.php:139
 #: app/modules/import-export/assets/js/pages/export/export-plugins/components/export-plugins-footer/export-plugins-footer.js:8
-#: assets/js/app.js:7773 assets/js/editor.js:44543
+#: assets/js/app.js:7773 assets/js/editor.js:44544
 msgid "Back"
 msgstr "Retour"
 
@@ -2457,7 +2510,7 @@ msgstr "Fenêtres surgissantes"
 #: core/common/modules/finder/categories/general.php:72
 #: includes/template-library/sources/local.php:1679
 #: app/modules/site-editor/assets/js/templates/layout.js:9
-#: assets/js/app-packages.js:5708 assets/js/editor.js:44272
+#: assets/js/app-packages.js:5708 assets/js/editor.js:44273
 msgid "Theme Builder"
 msgstr "Constructeur de thème"
 
@@ -2607,7 +2660,7 @@ msgid "Type to find anything in Elementor"
 msgstr "Saisissez pour trouver dans Elementor"
 
 #: includes/editor-templates/hotkeys.php:92 assets/js/admin-top-bar.js:122
-#: assets/js/common.js:4342 assets/js/editor.js:35282
+#: assets/js/common.js:4342 assets/js/editor.js:35283
 msgid "Finder"
 msgstr "Finder"
 
@@ -2628,7 +2681,7 @@ msgid "Homepage"
 msgstr "Page d’accueil"
 
 #: core/common/modules/finder/categories/create.php:27
-#: assets/js/editor.js:42829
+#: assets/js/editor.js:42830
 msgid "Create"
 msgstr "Créer"
 
@@ -2703,7 +2756,7 @@ msgstr "Créer votre première page"
 msgid "Getting Started"
 msgstr "Premiers pas"
 
-#: includes/widgets/inner-section.php:35 assets/js/editor.js:26133
+#: includes/widgets/inner-section.php:35 assets/js/editor.js:26134
 msgid "Inner Section"
 msgstr "Section interne"
 
@@ -2722,7 +2775,7 @@ msgstr "Vide"
 #: includes/editor-templates/hotkeys.php:126
 #: includes/editor-templates/navigator.php:12
 #: includes/editor-templates/panel.php:82
-#: includes/editor-templates/panel.php:84 assets/js/editor.js:29604
+#: includes/editor-templates/panel.php:84 assets/js/editor.js:29605
 msgid "Navigator"
 msgstr "Navigateur"
 
@@ -2849,7 +2902,7 @@ msgstr "Pro"
 msgid "Blend Mode"
 msgstr "Mode de fusion"
 
-#: includes/editor-templates/hotkeys.php:35 assets/js/editor.js:28755
+#: includes/editor-templates/hotkeys.php:35 assets/js/editor.js:28756
 msgid "Copy"
 msgstr "Copier"
 
@@ -3348,8 +3401,8 @@ msgid "Remove"
 msgstr "Retirer"
 
 #: includes/editor-templates/hotkeys.php:67
-#: includes/editor-templates/repeater.php:21 assets/js/editor.js:28740
-#: assets/js/editor.js:47267
+#: includes/editor-templates/repeater.php:21 assets/js/editor.js:28741
+#: assets/js/editor.js:47268
 msgid "Duplicate"
 msgstr "Dupliquer"
 
@@ -3362,8 +3415,8 @@ msgstr "Glisser & déposer"
 msgid "Hide Panel"
 msgstr "Masquer le panneau"
 
-#: includes/editor-templates/panel.php:132 assets/js/editor.js:31136
-#: assets/js/editor.js:31432
+#: includes/editor-templates/panel.php:132 assets/js/editor.js:31137
+#: assets/js/editor.js:31433
 msgid "Save as Template"
 msgstr "Enregistrer comme modèle"
 
@@ -3376,7 +3429,7 @@ msgstr "Enregistrer le brouillon"
 msgid "Save Options"
 msgstr "Enregistrer les options"
 
-#: includes/editor-templates/panel.php:108 assets/js/editor.js:23849
+#: includes/editor-templates/panel.php:108 assets/js/editor.js:23850
 msgid "Publish"
 msgstr "Publier"
 
@@ -3515,19 +3568,19 @@ msgstr "Basculer sur l’onglet Révisions pour les anciennes versions"
 
 #: modules/history/views/history-panel-template.php:10
 #: modules/history/views/revisions-panel-template.php:26
-#: assets/js/editor.js:46994
+#: assets/js/editor.js:46995
 msgid "Revisions"
 msgstr "Révisions"
 
 #: includes/editor-templates/hotkeys.php:14
 #: includes/editor-templates/templates.php:124
-#: modules/history/views/history-panel-template.php:9 assets/js/editor.js:46991
+#: modules/history/views/history-panel-template.php:9 assets/js/editor.js:46992
 msgid "Actions"
 msgstr "Actions"
 
 #: includes/editor-templates/hotkeys.php:117
 #: includes/editor-templates/panel.php:86
-#: includes/editor-templates/panel.php:88 assets/js/editor.js:47591
+#: includes/editor-templates/panel.php:88 assets/js/editor.js:47592
 msgid "History"
 msgstr "Historique"
 
@@ -3705,7 +3758,7 @@ msgstr "Pour la résolution de conflits de configuration serveur."
 #: modules/safe-mode/module.php:48
 #: app/assets/js/organisms/unfiltered-files-dialog.js:75 assets/js/admin.js:282
 #: assets/js/app-packages.js:2634 assets/js/app.js:3995
-#: assets/js/common.js:1885 assets/js/editor.js:37633
+#: assets/js/common.js:1885 assets/js/editor.js:37634
 msgid "Enable"
 msgstr "Activer"
 
@@ -3741,11 +3794,11 @@ msgstr "Sélecteur de titre de page"
 msgid "Select"
 msgstr "Sélectionner"
 
-#: includes/editor-templates/hotkeys.php:51 assets/js/editor.js:28779
+#: includes/editor-templates/hotkeys.php:51 assets/js/editor.js:28780
 msgid "Paste Style"
 msgstr "Coller le style"
 
-#: core/common/modules/finder/categories/edit.php:118 assets/js/editor.js:17547
+#: core/common/modules/finder/categories/edit.php:118 assets/js/editor.js:17548
 msgid "Template"
 msgstr "Modèle"
 
@@ -3804,7 +3857,7 @@ msgid "Coming Soon"
 msgstr "Arrive bientôt"
 
 #: core/kits/documents/kit.php:168 includes/maintenance-mode.php:215
-#: assets/js/editor.js:47266
+#: assets/js/editor.js:47267
 msgid "Disabled"
 msgstr "Désactivé"
 
@@ -4147,8 +4200,8 @@ msgstr "Découvrez notre widget global"
 msgid "Get more with Elementor Pro"
 msgstr "Obtenez plus avec Elementor Pro"
 
-#: includes/editor-templates/panel-elements.php:11 assets/js/editor.js:18977
-#: assets/js/editor.js:34551
+#: includes/editor-templates/panel-elements.php:11 assets/js/editor.js:18978
+#: assets/js/editor.js:34552
 msgid "Global"
 msgstr "Global"
 
@@ -4393,7 +4446,7 @@ msgstr "Bibliothèque"
 #: assets/js/app-packages.js:1868 assets/js/app-packages.js:3789
 #: assets/js/app-packages.js:4310 assets/js/app.js:2943 assets/js/app.js:5055
 #: assets/js/app.js:5458 assets/js/app.js:7437 assets/js/app.js:8269
-#: assets/js/app.js:11724 assets/js/editor.js:44546
+#: assets/js/app.js:11724 assets/js/editor.js:44547
 msgid "Close"
 msgstr "Fermer"
 
@@ -4449,8 +4502,8 @@ msgstr "Pour modifier le code source de votre thème, nous vous recommandons d�
 #: assets/js/app-packages.js:5588 assets/js/app.js:3866 assets/js/app.js:7721
 #: assets/js/app.js:8860 assets/js/app.js:10291 assets/js/app.js:10601
 #: assets/js/app.js:10647 assets/js/app.js:11723 assets/js/editor.js:13470
-#: assets/js/editor.js:26643 assets/js/editor.js:26674
-#: assets/js/editor.js:38166
+#: assets/js/editor.js:26644 assets/js/editor.js:26675
+#: assets/js/editor.js:38167
 #: assets/js/kit-library.8a5a7f84827b7031a821.bundle.js:1120
 #: assets/js/kit-library.8a5a7f84827b7031a821.bundle.js:3631
 msgid "Learn More"
@@ -4459,7 +4512,7 @@ msgstr "En savoir plus"
 #: core/kits/documents/tabs/global-typography.php:28
 #: core/kits/documents/tabs/global-typography.php:47
 #: app/modules/import-export/assets/js/shared/kit-content-data/kit-content-data.js:49
-#: assets/js/app.js:10891 assets/js/editor.js:44307
+#: assets/js/app.js:10891 assets/js/editor.js:44308
 msgid "Global Fonts"
 msgstr "Polices globales"
 
@@ -4662,9 +4715,9 @@ msgstr "Une nouvelle version d’Elementor Page Builder est disponible. <a href=
 msgid "Custom URL"
 msgstr "URL personnalisée"
 
-#: includes/editor-templates/hotkeys.php:43 assets/js/editor.js:28767
-#: assets/js/editor.js:30681 assets/js/editor.js:39712
-#: assets/js/editor.js:40672
+#: includes/editor-templates/hotkeys.php:43 assets/js/editor.js:28768
+#: assets/js/editor.js:30682 assets/js/editor.js:39713
+#: assets/js/editor.js:40673
 msgid "Paste"
 msgstr "Coller"
 
@@ -4849,6 +4902,11 @@ msgctxt "Image Size Control"
 msgid "Image Size"
 msgstr "Taille de l’image"
 
+#: includes/controls/groups/typography.php:147
+msgctxt "Typography Control"
+msgid "Bold"
+msgstr "Gras"
+
 #: includes/controls/groups/typography.php:185
 msgctxt "Typography Control"
 msgid "None"
@@ -4880,9 +4938,9 @@ msgstr "Thèmes Pojo"
 msgid "Form"
 msgstr "Formulaire"
 
-#: includes/editor-templates/panel-elements.php:10 assets/js/editor.js:18043
-#: assets/js/editor.js:19986 assets/js/editor.js:20417
-#: assets/js/editor.js:34548
+#: includes/editor-templates/panel-elements.php:10 assets/js/editor.js:18044
+#: assets/js/editor.js:19987 assets/js/editor.js:20418
+#: assets/js/editor.js:34549
 msgid "Elements"
 msgstr "Éléments"
 
@@ -4892,7 +4950,7 @@ msgstr "Éléments"
 #: includes/editor-templates/responsive-bar.php:61
 #: includes/managers/controls.php:304 includes/settings/settings.php:192
 #: includes/settings/settings.php:371 assets/js/editor.js:8955
-#: assets/js/editor.js:35266 assets/js/editor.js:44670
+#: assets/js/editor.js:35267 assets/js/editor.js:44671
 msgid "Settings"
 msgstr "Réglages"
 
@@ -5334,8 +5392,8 @@ msgstr "Écart"
 #: modules/shapes/widgets/text-path.php:497
 #: modules/shapes/widgets/text-path.php:517
 #: modules/shapes/widgets/text-path.php:563
-#: modules/shapes/widgets/text-path.php:583 assets/js/editor.js:44807
-#: assets/js/editor.js:44850
+#: modules/shapes/widgets/text-path.php:583 assets/js/editor.js:44808
+#: assets/js/editor.js:44851
 msgid "Color"
 msgstr "Couleur"
 
@@ -5924,7 +5982,7 @@ msgstr "Largeur"
 #: includes/elements/column.php:113 includes/elements/container.php:1192
 #: includes/elements/section.php:227 includes/managers/controls.php:303
 #: includes/managers/elements.php:281 includes/widgets/common.php:175
-#: includes/widgets/icon-list.php:95 assets/js/editor.js:34373
+#: includes/widgets/icon-list.php:95 assets/js/editor.js:34374
 msgid "Layout"
 msgstr "Mise en page"
 
@@ -6014,7 +6072,7 @@ msgstr "Couleur du texte"
 #: core/kits/documents/tabs/theme-style-typography.php:38
 #: core/schemes/typography.php:64 includes/elements/column.php:647
 #: includes/elements/section.php:1104 assets/js/editor-modules.js:1529
-#: assets/js/editor.js:40351
+#: assets/js/editor.js:40352
 msgid "Typography"
 msgstr "Typographie"
 
@@ -6041,13 +6099,13 @@ msgstr "Responsive"
 #: core/dynamic-tags/tag.php:88 includes/elements/column.php:737
 #: includes/elements/section.php:1193 includes/managers/controls.php:301
 #: includes/settings/settings.php:296 assets/js/editor.js:8961
-#: assets/js/editor.js:34370
+#: assets/js/editor.js:34371
 msgid "Advanced"
 msgstr "Avancé"
 
 #: includes/managers/controls.php:300 includes/widgets/divider.php:363
 #: includes/widgets/icon-list.php:275 assets/js/editor.js:8958
-#: assets/js/editor.js:34367
+#: assets/js/editor.js:34368
 msgid "Style"
 msgstr "Style"
 
@@ -6060,7 +6118,7 @@ msgstr "Style"
 #: includes/widgets/toggle.php:466
 #: app/modules/import-export/assets/js/shared/kit-content-data/kit-content-data.js:28
 #: app/modules/import-export/assets/js/shared/kit-data/kit-data.js:33
-#: assets/js/app.js:10881 assets/js/app.js:11374 assets/js/editor.js:34364
+#: assets/js/app.js:10881 assets/js/app.js:11374 assets/js/editor.js:34365
 msgid "Content"
 msgstr "Contenu"
 
@@ -6084,7 +6142,7 @@ msgstr "Palette de couleur"
 #: core/schemes/base-ui.php:119 includes/controls/image-dimensions.php:102
 #: includes/editor-templates/panel.php:164
 #: modules/history/views/revisions-panel-template.php:18
-#: assets/js/editor.js:9586 assets/js/editor.js:35339
+#: assets/js/editor.js:9586 assets/js/editor.js:35340
 msgid "Apply"
 msgstr "Appliquer"
 
@@ -6098,7 +6156,7 @@ msgstr "Jeter"
 msgid "Reset"
 msgstr "Réinitialiser"
 
-#: includes/editor-templates/templates.php:172 assets/js/editor.js:33790
+#: includes/editor-templates/templates.php:172 assets/js/editor.js:33791
 msgid "Preview"
 msgstr "Aperçu"
 
@@ -6189,8 +6247,8 @@ msgstr "Ajouter un élément"
 #: core/kits/views/trash-kit-confirmation.php:30
 #: includes/editor-templates/hotkeys.php:60
 #: includes/editor-templates/templates.php:185 assets/js/editor.js:9807
-#: assets/js/editor.js:13206 assets/js/editor.js:26354
-#: assets/js/editor.js:28823 assets/js/editor.js:44860
+#: assets/js/editor.js:13206 assets/js/editor.js:26355
+#: assets/js/editor.js:28824 assets/js/editor.js:44861
 msgid "Delete"
 msgstr "Effacer"
 
@@ -6204,7 +6262,7 @@ msgstr "Sélectionnez une icône"
 #: includes/widgets/common.php:1008 includes/widgets/image-carousel.php:695
 #: includes/widgets/image-gallery.php:195 includes/widgets/social-icons.php:190
 #: includes/widgets/social-icons.php:348 modules/shapes/module.php:29
-#: assets/js/editor.js:42655
+#: assets/js/editor.js:42656
 msgid "Custom"
 msgstr "Personnalisé"
 
@@ -6595,8 +6653,8 @@ msgstr "Haut"
 #: includes/widgets/text-editor.php:131 includes/widgets/text-editor.php:266
 #: includes/widgets/traits/button-trait.php:74
 #: modules/page-templates/module.php:296
-#: modules/shapes/widgets/text-path.php:187 assets/js/editor.js:42647
-#: assets/js/editor.js:42658
+#: modules/shapes/widgets/text-path.php:187 assets/js/editor.js:42648
+#: assets/js/editor.js:42659
 msgid "Default"
 msgstr "Par défaut"
 
