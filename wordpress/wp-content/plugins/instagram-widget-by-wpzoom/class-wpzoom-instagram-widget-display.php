@@ -346,7 +346,7 @@ class Wpzoom_Instagram_Widget_Display {
 								$output .= '<input type="hidden" name="item_amount" value="' . esc_attr( $amount ) . '" />';
 								$output .= '<input type="hidden" name="image_size" value="' . esc_attr( $image_size ) . '" />';
 								$output .= '<input type="hidden" name="next" value="' . ( ! empty( $items ) && array_key_exists( 'paging', $items ) && is_object( $items['paging'] ) && property_exists( $items['paging'], 'next' ) ? esc_url( $items['paging']->next ) : '' ) . '" />';
-								$output .= '<button type="submit">' . esc_html( ( isset( $args['load-more-text'] ) ? trim( $args['load-more-text'] ) : __( 'Load More', 'instagram-widget-by-wpzoom' ) ) . ( ! $this->is_pro ? __( ' [PRO only]', 'instagram-widget-by-wpzoom' ) : '' ) ) . '</button>';
+								$output .= '<button type="submit">' . esc_html( ( isset( $args['load-more-text'] ) ? trim( $args['load-more-text'] ) : __( 'Load More&hellip;', 'instagram-widget-by-wpzoom' ) ) . ( ! $this->is_pro ? __( ' [PRO only]', 'instagram-widget-by-wpzoom' ) : '' ) ) . '</button>';
 								$output .= '</form>';
 							}
 
@@ -600,7 +600,7 @@ class Wpzoom_Instagram_Widget_Display {
 							<div class="wpz-insta-follow">
 								<a target="_blank" rel="noopener"
 								href="' . sprintf( 'https://instagram.com/%s?ref=badge', esc_attr( $user_name ) ) . '">
-									' . __( 'Follow', 'wpzoom-instagram-widget' ) . '
+									' . __( 'Follow', 'instagram-widget-by-wpzoom' ) . '
 								</a>
 							</div>
 						</div>
@@ -611,11 +611,11 @@ class Wpzoom_Instagram_Widget_Display {
 					}
 
 					if ( ! empty( $item['timestamp'] ) ) {
-						$output .= '<div class="wpz-insta-date">' . sprintf( __( '%s ago' ), human_time_diff( strtotime( $item['timestamp'] ) ) ) . '</div>';
+						$output .= '<div class="wpz-insta-date">' . sprintf( __( '%s ago', 'instagram-widget-by-wpzoom' ), human_time_diff( strtotime( $item['timestamp'] ) ) ) . '</div>';
 					}
 
 					$output .= '<div class="view-post">
-					<a href="' . esc_url( $link ) . '" target="_blank" rel="noopener"><span class="dashicons dashicons-instagram"></span>' . __( 'View on Instagram', 'wpzoom-instagram-widget' ) . '</a>
+					<a href="' . esc_url( $link ) . '" target="_blank" rel="noopener"><span class="dashicons dashicons-instagram"></span>' . __( 'View on Instagram', 'instagram-widget-by-wpzoom' ) . '</a>
 					<span class="delimiter">|</span>
 					<div class="wpz-insta-pagination">' . sprintf( '%d/%d', $count, $amount ) . '</div>
 					</div></div></div></div>';

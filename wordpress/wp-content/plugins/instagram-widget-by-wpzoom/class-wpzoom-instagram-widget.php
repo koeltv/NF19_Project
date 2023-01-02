@@ -105,6 +105,8 @@ class Wpzoom_Instagram_Widget extends WP_Widget {
 
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 
+		$instance['widget-id'] = $args['widget_id'];
+
 		echo $args['before_widget'];
 
 		if ( $instance['title'] ) {
@@ -467,7 +469,7 @@ class Wpzoom_Instagram_Widget extends WP_Widget {
 												<div class="wpz-insta-follow">
 													<a target="_blank" rel="noopener"
 													href="<?php printf( 'https://instagram.com/%s?ref=badge', esc_attr( $username ) ); ?>">
-														<?php _e( 'Follow', 'wpzoom-instagram-widget' ); ?>
+														<?php _e( 'Follow', 'instagram-widget-by-wpzoom' ); ?>
 													</a>
 												</div>
 											</div>
@@ -480,12 +482,12 @@ class Wpzoom_Instagram_Widget extends WP_Widget {
 
 										<?php if ( ! empty( $item['timestamp'] ) ) : ?>
 											<div class="wpz-insta-date">
-												<?php printf( __( '%s ago' ), human_time_diff( strtotime( $item['timestamp'] ) ) ); ?>
+												<?php printf( __( '%s ago', 'instagram-widget-by-wpzoom' ), human_time_diff( strtotime( $item['timestamp'] ) ) ); ?>
 											</div>
 										<?php endif; ?>
 
 										<div class="view-post">
-											<a href="<?php echo esc_url( $link ); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-instagram"></span><?php _e( 'View on Instagram', 'wpzoom-instagram-widget' ); ?></a>
+											<a href="<?php echo esc_url( $link ); ?>" target="_blank" rel="noopener"><span class="dashicons dashicons-instagram"></span><?php _e( 'View on Instagram', 'instagram-widget-by-wpzoom' ); ?></a>
 											<span class="delimiter">|</span>
 											<div class="wpz-insta-pagination"><?php printf( '%d/%d', $count, $amount ); ?></div>
 										</div>

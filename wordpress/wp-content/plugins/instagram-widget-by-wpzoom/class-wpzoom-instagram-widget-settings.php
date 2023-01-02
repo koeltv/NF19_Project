@@ -72,7 +72,7 @@ class WPZOOM_Instagram_Widget_Settings {
 		// 'hover-tags-feed'                 => array( 'type' => 'boolean', 'default' => false ),
 		'hover-date'                      => array( 'type' => 'boolean', 'default' => false ),
 		'show-load-more'                  => array( 'type' => 'boolean', 'default' => true ),
-		'load-more-text'                  => array( 'type' => 'string',  'default' => 'Load More' ),
+		'load-more-text'                  => array( 'type' => 'string',  'default' => 'Load More&hellip;' ),
 		'load-more-color'                 => array( 'type' => 'string',  'default' => '' ),
 	);
 
@@ -436,7 +436,7 @@ class WPZOOM_Instagram_Widget_Settings {
 			'zoom-instagram-widget-cron-dismiss',
 			plugin_dir_url( dirname( __FILE__ ) . '/instagram-widget-by-wpzoom.php' ) . 'dist/scripts/backend/cron-dismiss.js',
 			array( 'jquery' ),
-			'2.0.0',
+			WPZOOM_INSTAGRAM_VERSION,
 			true
 		);
 	}
@@ -704,13 +704,13 @@ class WPZOOM_Instagram_Widget_Settings {
 
 				case 'wpz-insta_account-token' :
 					$raw_token = get_post_meta( get_the_ID(), '_wpz-insta_token', true );
-					$oauth_url  = add_query_arg(
+					$oauth_url = add_query_arg(
 						array(
 							'client_id'     => '1242932982579434',
 							'redirect_uri'  => 'https://wpzoom.com/instagram-auth/',
 							'scope'         => 'user_profile,user_media',
 							'response_type' => 'code',
-							'state'         => base64_encode( urlencode( admin_url( 'post.php?post=' . get_the_ID() . '&action=edit' ) ) ),
+							'state'         => 'RETURN_URL',//base64_encode( urlencode( admin_url( 'post.php?post=' . get_the_ID() . '&action=edit' ) ) ),
 						),
 						'https://api.instagram.com/oauth/authorize'
 					);
@@ -1833,14 +1833,14 @@ class WPZOOM_Instagram_Widget_Settings {
 			'zoom-instagram-widget-preview',
 			plugin_dir_url( dirname( __FILE__ ) . '/instagram-widget-by-wpzoom.php' ) . 'dist/styles/frontend/preview.css',
 			array(),
-			'2.0.0'
+			WPZOOM_INSTAGRAM_VERSION
 		);
 
 		wp_enqueue_script(
 			'zoom-instagram-widget-preview',
 			plugin_dir_url( dirname( __FILE__ ) . '/instagram-widget-by-wpzoom.php' ) . 'dist/scripts/frontend/preview.js',
 			array( 'jquery' ),
-			'2.0.0',
+			WPZOOM_INSTAGRAM_VERSION,
 			true
 		);
 	}
@@ -2766,8 +2766,8 @@ class WPZOOM_Instagram_Widget_Settings {
 		if ( self::is_wpzinsta_screen() ) {
 			wp_enqueue_media();
 			wp_enqueue_style( 'wp-color-picker' );
-			wp_enqueue_style( 'zoom-instagram-widget-admin', plugin_dir_url( dirname( __FILE__ ) . '/instagram-widget-by-wpzoom.php' ) . 'dist/styles/backend/index.css', array( 'wp-color-picker' ), '1.7.3' );
-			wp_enqueue_script( 'zoom-instagram-widget-admin', plugin_dir_url( dirname( __FILE__ ) . '/instagram-widget-by-wpzoom.php' ) . 'dist/scripts/backend/index.js', array( 'jquery', 'wp-color-picker' ), '1.7.3' );
+			wp_enqueue_style( 'zoom-instagram-widget-admin', plugin_dir_url( dirname( __FILE__ ) . '/instagram-widget-by-wpzoom.php' ) . 'dist/styles/backend/index.css', array( 'wp-color-picker' ), WPZOOM_INSTAGRAM_VERSION );
+			wp_enqueue_script( 'zoom-instagram-widget-admin', plugin_dir_url( dirname( __FILE__ ) . '/instagram-widget-by-wpzoom.php' ) . 'dist/scripts/backend/index.js', array( 'jquery', 'wp-color-picker' ), WPZOOM_INSTAGRAM_VERSION );
 			wp_localize_script(
 				'zoom-instagram-widget-admin',
 				'zoom_instagram_widget_admin',
@@ -2794,6 +2794,7 @@ class WPZOOM_Instagram_Widget_Settings {
 					'edit_user_url'                     => admin_url( 'edit.php?post_type=wpz-insta_user#post-' ),
 					'preview_url'                       => site_url( '?wpz-insta-widget-preview=true' ),
 					'default_user_thumbnail'            => plugins_url( '/dist/images/backend/icon-insta.png', __FILE__ ),
+					'post_edit_url'                     => admin_url( 'post.php?action=edit&post=' ),
 				)
 			);
 		}
